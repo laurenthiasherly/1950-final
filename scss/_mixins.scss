@@ -1,0 +1,12 @@
+// Mixins
+
+@mixin margin-center {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin text-center {
+    text-align: center;
+}
