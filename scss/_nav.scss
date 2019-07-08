@@ -1,0 +1,103 @@
+header {
+	background-color: $bg-color;
+	height: 70px;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	padding: 13px 20px 0 20px;
+	z-index: 1000;
+	min-width: $min-width;
+}
+
+header nav {
+	float: right;
+	display: block;
+	background-color: $bg-color;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav li {
+	margin: 0 15px;
+	background-color: $bg-color;
+}
+
+header nav a {
+	display: block;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 40px;
+}
+
+header nav a:hover {
+	text-decoration: none;
+	margin-top: -3px;
+	transition: all 0.5s ease;
+}
+
+header nav a:focus{
+	font-weight: 700;
+}
+
+#logo{
+	width: 100px;
+	position: fixed;
+	top:20px;
+	left:70px;
+}
+
+#hamburger {
+	width:40px;
+	float: right;
+	margin: 2px 7px;
+	display: none; 
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	header nav {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		display: none;
+		top:70px;
+		padding-bottom: 20px;
+	}
+
+	header nav ul{
+		width: 100%; 
+		display: block;
+	}
+
+	header nav li {
+		float: none;
+	    width: 100%;
+	    margin: 0;
+	}
+
+	header nav a:focus{
+		font-weight: 700;
+	}
+	
+	#hamburger{
+		display: block;
+	}
+
+	header nav a:hover {
+		font-weight: 700;
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+
+}

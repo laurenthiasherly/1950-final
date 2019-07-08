@@ -1,0 +1,5 @@
+.wrapper {
+    max-width: $max-width;
+    min-width: $min-width;
+    @include margin-center;
+}

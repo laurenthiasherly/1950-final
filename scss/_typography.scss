@@ -1,0 +1,23 @@
+// Typography Styles
+
+body {
+    font-family: $text-font;
+    line-height: $line-height;
+}
+
+h1, h2, h3, a {
+    font-family: $dark;
+    text-decoration: none;
+    margin: 0;
+}
+
+a{
+	color: $light;
+	font-weight: 700;
+}
+
+
+@media screen and (max-width: 600px) {
+	
+
+}
