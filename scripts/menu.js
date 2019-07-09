@@ -15,4 +15,8 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#scrolltop").click(function(){
+		window.scrollTo(0, 0);
+	});
+
 });

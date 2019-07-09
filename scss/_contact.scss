@@ -1,0 +1,94 @@
+
+.contact{
+	margin-top: 140px;
+	min-width: $min-width;
+
+	h1{
+		font-size:50px;
+		color: $dark;
+		letter-spacing: 16px;
+	}
+
+	.half{
+		flex:6;
+	}
+
+	.contact-info{
+		padding-top: 70px;
+	}
+
+	.left-contact{
+
+		a{
+			color: black;
+			font-weight: 400;
+		}
+
+		i{
+			color: $semi-light;
+			font-size: 40px;
+		}
+
+		p{
+			line-height: $extra-line-height;
+		}
+	}
+
+	.right-contact{
+		background: #eee;
+		padding: 20px;
+
+		input{
+			margin: 8px 0 18px 0;
+			border: none;
+			background: #eee;
+			border-bottom: solid 2px #aaa;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		.input{
+			width: 50%;
+			height: 35px;
+		}
+
+		form{
+			margin: 20px 30px 40px 30px;
+		}
+
+		#submit{
+			margin-top: 30px;
+			border:none;
+			text-align: center;
+			width: 40%;
+			background-color: $dark;
+			border-radius: 8px;
+			height: 40px;
+			color: $light;
+			font-weight: 700;
+			font-size: 15px;
+			cursor: pointer;
+		}
+
+		textarea{
+			padding: 15px;
+			font-size: 14px;
+			border: none;
+			background: #ddd;
+		}
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	
+	.contact-info{
+		flex-direction: column;
+
+		.input{
+			width: 80%;
+			height: 35px;
+		}
+	}
+	
+}

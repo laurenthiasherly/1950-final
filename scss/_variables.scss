@@ -4,9 +4,9 @@
 
 $bg-color: #003e6b;
 $dark: #003e6b;
+$btight: yellow;
 $light: #fff;
-$semi-dark: lighten($dark, 40);
-$semi-light: darken($light, 15);
+$semi-light: darken($light, 40);
 
 // TYPOGRAPHY
 $title-font: 'Ubuntu', sans-serif;
@@ -16,6 +16,6 @@ $single-line-height: 1;
 $line-height: 1.2;
 $extra-line-height: 1.5;
 
-$max-width: 1200px;
+$max-width: 1100px;
 $min-width: 320px;
 
