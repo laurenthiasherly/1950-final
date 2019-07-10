@@ -19,4 +19,20 @@ $(document).ready(function(){
 		window.scrollTo(0, 0);
 	});
 
-});
+	$("#close").click(function(){
+		$("#popup").css("display", "none");
+	});
+
+	$("#submit").click(function(){
+		if($("#firstname").val() !== "" && $("#lastname").val() !== ""){
+			$("#popup").css("display", "block");
+			$("#reminder").css("display", "none");
+		}
+		else{
+			$("#reminder").css("display", "block");
+			window.scrollTo(0, 120);
+		}
+		console.log("submit");
+	});
+
+});		

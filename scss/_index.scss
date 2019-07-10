@@ -5,3 +5,14 @@
 	@include background("../images/indexbanner.jpg", left top);
 	position: relative;
 }
+
+
+@media screen and (max-width: $medium) {
+
+	#indexBanner{		
+		height: 50vh;
+		@include background("../images/indexbanner.jpg", center);
+		position: relative;
+	}
+
+}

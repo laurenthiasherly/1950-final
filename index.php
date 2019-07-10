@@ -5,6 +5,13 @@
 		<div id="indexBanner">
 
 		</div>
+		<section>
+			<div>
+				<div class="maxwidth">
+					
+				</div>
+			</div>
+		</section>
 	</main>
 
 

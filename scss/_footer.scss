@@ -89,7 +89,7 @@ footer a{
 	cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $medium) {
 	
 	.footerContainer{
 		flex-direction: column;
@@ -110,8 +110,5 @@ footer a{
 }
 
 
-@media screen and (max-width: 520px) {
 
-
-}
 

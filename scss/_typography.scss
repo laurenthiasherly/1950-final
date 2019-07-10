@@ -1,18 +1,18 @@
 // Typography Styles
 
 body {
-    font-family: $text-font;
+    font-family: $font;
     line-height: $line-height;
 }
 
 h1, h2, h3, a, label {
-    font-family: $title-font;
+    font-family: $font;
     text-decoration: none;
     margin: 0;
 }
 
-input, p, textarea{
-	font-family: $text-font;
+input, p, textarea, th, td{
+	font-family: $font;
 	line-height: $line-height;
 }
 
@@ -25,9 +25,7 @@ b{
 	font-weight: 700;
 }
 
-
-
-@media screen and (max-width: 600px) {
-	
-
+.blue{
+	color: $semi-dark;
 }
+

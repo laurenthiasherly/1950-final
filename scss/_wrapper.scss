@@ -21,4 +21,9 @@
 	margin: 0 auto;
 	width: 100%;
 	max-width: $max-width;
+	min-width: $min-width;
+}
+
+.minwidth{
+	min-width: $min-width;
 }
