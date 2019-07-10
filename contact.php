@@ -18,7 +18,6 @@
 			</div>
 			<div class="right-contact half">
 				<form>
-					<p id="reminder"><i> Please fill in the required (*) fields </i></p>
 
 					<label for="firstname">First name*</label><br>
 					<input type="text" name="firstname" id="firstname" class="input" required><br>
@@ -29,18 +28,20 @@
 					<label for="firstname">Email</label><br>
 					<input type="email" name="email" class="input"><br>
 
-					<label for="studentno">BCIT student number</label><br>
+					<label for="studentno">BCIT student number*</label><br>
 					<input type="text" name="studentno" class="input" id="studentno"><br><br>
 					
 					<label for="whichstudent">Select that applies</label><br><br>
-					<input type="radio" name="whichstudent" checked value="prospective"> Prospective student<br>
+					<input type="radio" name="whichstudent" id="defaultcheck" checked value="prospective"> Prospective student<br>
   					<input type="radio" name="whichstudent" value="current"> Current student<br>
   					<input type="radio" name="whichstudent" value="international"> International student<br><br>
 
   					<label>Let us know your questions / inquiries </label><br><br>
   					<textarea rows="6" cols="60"></textarea><br>
+  					<p id="reminder"><i> Please fill in the required (*) fields </i></p>
+  					<p id="reminder2"><i> Please enter a valid BCIT student number </i></p>
 
-					<input type="reset" value="Submit" id="submit">
+					<input type="submit" value="Submit" id="submit">
 				</form>
 			</div>
 		</div>

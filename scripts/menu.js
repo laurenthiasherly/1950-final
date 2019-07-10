@@ -23,16 +23,46 @@ $(document).ready(function(){
 		$("#popup").css("display", "none");
 	});
 
-	$("#submit").click(function(){
-		if($("#firstname").val() !== "" && $("#lastname").val() !== ""){
-			$("#popup").css("display", "block");
-			$("#reminder").css("display", "none");
+	const pattern = new RegExp("^(a|A)[0-9]{8}$");
+
+	$("#submit").click(function(e){
+		let isValid = true;
+		if($.trim($("#firstname").val()) !== "" && 
+			$("#firstname").val() !== null &&
+			$("#firstname").val() !== "" &&
+			$("#lastname").val() !== "" && 
+			$("#lastname").val() !== "" &&
+			$("#lastname").val() !== null){
+
+			if(pattern.test($("#studentno").val()) === true){
+				console.log("student no ok")
+				$("#popup").css("display", "block");
+				$("#reminder2").css("display", "none");
+
+				$('#firstname').empty();
+				$('#firstname').attr('value', '');
+
+				$('form :input').val('');
+				$('form :checked').removeAttr('checked');
+				$("#defaultcheck").attr("checked", "checked");
+			}
+			else{
+				$("#reminder2").css("display", "block");
+				isValid = false;
+			}
+
+			$("#reminder").css("display", "none");	
 		}
+
 		else{
 			$("#reminder").css("display", "block");
-			window.scrollTo(0, 120);
+			isValid = false;
 		}
-		console.log("submit");
+
+		console.log(pattern.test($("#studentno").val()));
+
+		e.preventDefault();
+
 	});
 
 });		

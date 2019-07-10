@@ -25,7 +25,7 @@
 		}
 
 		i{
-			color: $semi-light;
+			color: $semi-dark;
 			font-size: 30px;
 		}
 
@@ -79,13 +79,13 @@
 	}
 }
 
-#reminder{
+#reminder, #reminder2{
 	display: none;
 	color: red;
 }
 
 #popup{
-	position: fixed;
+	position: fixed; 
 	top:0;
 	left:0;
 	z-index: 1000;

@@ -332,7 +332,7 @@ footer a {
     color: black;
     font-weight: 400; }
   .contact .left-contact i {
-    color: #999999;
+    color: #38abff;
     font-size: 30px; }
   .contact .left-contact p {
     line-height: 1.5; }
@@ -369,7 +369,7 @@ footer a {
       border: none;
       background: #ddd; }
 
-#reminder {
+#reminder, #reminder2 {
   display: none;
   color: red; }
 
