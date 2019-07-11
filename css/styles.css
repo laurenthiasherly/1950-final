@@ -21,7 +21,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   line-height: 1.2; }
 
-h1, h2, h3, a, label {
+h1, h2, h3, a, label, button {
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   margin: 0; }
@@ -223,13 +223,94 @@ footer a {
 
 #indexBanner {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   margin-top: 65px;
   background-image: url("../images/indexbanner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left top;
+  background-position: bottom center;
+  background-attachment: fixed;
   position: relative; }
+  #indexBanner img {
+    width: 35%;
+    position: absolute;
+    top: 110px;
+    left: 70px; }
+
+.index-row {
+  padding: 50px 25px; }
+  .index-row h1 {
+    font-size: 30px;
+    color: #003e6b;
+    letter-spacing: 2px; }
+  .index-row #title {
+    font-size: 55px;
+    color: #003e6b;
+    letter-spacing: 8px;
+    transition: all 1s ease; }
+  .index-row article, .index-row p {
+    line-height: 1.5; }
+  .index-row a {
+    color: #38abff; }
+  .index-row .half {
+    flex: 6; }
+
+.index-row:hover #title {
+  letter-spacing: 14px; }
+
+.index-lesson {
+  background-color: #eee;
+  width: 100%; }
+  .index-lesson p {
+    text-align: left; }
+  .index-lesson button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background: #003e6b;
+    padding: 10px;
+    transition: all 0.8s ease;
+    cursor: pointer; }
+  .index-lesson button:hover {
+    margin-left: 20px; }
+
+.index-info {
+  background-image: url("../images/indexbanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .index-info .overlay {
+    padding: 70px 0;
+    background-color: rgba(255, 255, 255, 0.7); }
+  .index-info .third {
+    flex: 4;
+    padding: 15px 25px; }
+  .index-info i {
+    font-size: 45px;
+    color: #38abff; }
+  .index-info h3 {
+    font-size: 24px;
+    color: #003e6b; }
+  .index-info #registration {
+    font-size: 12px;
+    font-style: italic;
+    color: red; }
+
+.index-contact {
+  padding: 50px 20px; }
+  .index-contact button {
+    margin-top: 5px;
+    border: solid 2px #003e6b;
+    border-radius: 8px;
+    height: 40px;
+    width: 160px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #003e6b;
+    cursor: pointer; }
 
 @media screen and (max-width: 768px) {
   #indexBanner {
@@ -238,23 +319,52 @@ footer a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative; } }
+    position: relative; }
+    #indexBanner img {
+      width: 50%;
+      position: absolute;
+      top: 90px;
+      left: 70px; }
+  .index-info .overlay {
+    padding: 30px 0; }
+    .index-info .overlay div {
+      flex-direction: column;
+      padding: 30px 8%; } }
+
+@media screen and (max-width: 520px) {
+  #indexBanner {
+    height: 50vh;
+    background-image: url("../images/indexbanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; }
+    #indexBanner img {
+      width: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .index-lesson article {
+    flex-direction: column; }
+  .index-lesson p {
+    padding-top: 25px; } }
 
 /* ====== SCHEDULE ====== */
 #scheduleBanner {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   margin-top: 65px;
-  background-image: url("../images/schedulebanner.jpg");
+  background-image: url("../images/indexbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   position: relative;
   min-width: 320px; }
   #scheduleBanner #scheduleBannerOverlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9); }
+    background-color: rgba(255, 255, 255, 0.7); }
   #scheduleBanner h1 {
     color: #003e6b;
     position: absolute;

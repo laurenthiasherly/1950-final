@@ -14,7 +14,7 @@
 <body>
 	
 	<header>
-		<img id="logo" src="images/logo.png" alt="BCIT logo">
+		<a href="index.php"><img id="logo" src="images/logo.png" alt="BCIT logo"></a>
 		<div class="header-content-wrap container">
 			<img  id="hamburger" src="images/hamburger.png" alt="Hamburger button">
 			<nav>
