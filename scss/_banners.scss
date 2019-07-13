@@ -1,0 +1,30 @@
+
+.banner{
+	width: 100%;
+	height: 50vh;
+	margin-top:65px;
+	position: relative;
+	min-width: $min-width;
+
+	.banner-overlay {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255,255,255,0.7);
+	}
+
+	h1{
+		color: $dark;
+		@include absolute-center;
+        font-size: 40px;
+        text-align: center;
+	}
+}
+
+#aboutBanner{
+	@include background("../images/banner_about.jpg", center);
+}
+
+#lessonsBanner{
+	@include background("../images/banner_lessons.jpg", center);
+}
+
