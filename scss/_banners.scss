@@ -1,4 +1,7 @@
 
+/* ====== BANNERS ====== */
+/* for About, Schedule, and Lessons pages */
+
 .banner{
 	width: 100%;
 	height: 50vh;
@@ -22,6 +25,10 @@
 
 #aboutBanner{
 	@include background("../images/banner_about.jpg", center);
+}
+
+#scheduleBanner{
+	@include background("../images/indexbg.jpg", center);
 }
 
 #lessonsBanner{

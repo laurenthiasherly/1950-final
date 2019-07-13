@@ -2,9 +2,9 @@
 <?php include("nav.php") ?>
 
 	<main> 
-		<div id="scheduleBanner">
-			<div id="scheduleBannerOverlay">
-				<h1> Schedule </h1>
+		<div id="scheduleBanner" class="banner">
+			<div class="banner-overlay">
+				<h1>Schedule</h1>
 			</div>
 		</div>
 		<div class="schedule maxwidth center text-center">
