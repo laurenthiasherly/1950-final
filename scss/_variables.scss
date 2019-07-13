@@ -6,7 +6,9 @@ $bg-color: #003e6b;
 $dark: #003e6b;
 $light: #fff;
 $semi-dark: lighten($dark, 40);
-$semi-light: darken($light, 40);
+$semi-light: darken($light,6.5);
+$semi-light2: darken($light,13.5);
+$semi-light3: darken($light,33.5);
 
 // TYPOGRAPHY
 $font: 'Ubuntu', sans-serif;

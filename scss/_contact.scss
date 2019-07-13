@@ -35,14 +35,14 @@
 	}
 
 	.right-contact{
-		background: #eee;
+		background: $semi-light;
 		padding: 20px;
 
 		input{
 			margin: 8px 0 18px 0;
 			border: none;
-			background: #eee;
-			border-bottom: solid 2px #aaa;
+			background: $semi-light;
+			border-bottom: solid 2px $semi-light3;
 			padding: 10px;
 			font-size: 14px;
 		}
@@ -74,7 +74,7 @@
 			padding: 15px;
 			font-size: 14px;
 			border: none;
-			background: #ddd;
+			background: $semi-light2;
 		}
 	}
 }
