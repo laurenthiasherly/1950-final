@@ -127,28 +127,31 @@ header nav a:focus {
     display: none;
     top: 70px;
     padding-bottom: 20px; }
+
   header nav ul {
     width: 100%;
     display: block; }
+
   header nav li {
     float: none;
     width: 100%;
     margin: 0; }
+
   header nav a:focus {
     font-weight: 700; }
+
   #hamburger {
     display: block; }
+
   header nav a:hover {
     font-weight: 700;
     margin: 0; } }
-
 @media screen and (max-width: 520px) {
   #logo {
     width: 70px;
     position: fixed;
     top: 5px;
     left: 70px; } }
-
 /* ====== FOOTER ====== */
 footer {
   display: flex;
@@ -161,7 +164,7 @@ footer {
     height: 40px;
     border: none;
     background-color: #003e6b;
-    border-bottom: solid 2px #ddd;
+    border-bottom: solid 2px #dddddd;
     margin-top: 10px;
     color: #fff;
     font-size: 14px; }
@@ -218,9 +221,9 @@ footer a {
       width: 50%; }
     .footerContainer .right-footer {
       margin-top: 60px; }
+
   .left-footer {
     display: none; } }
-
 #indexBanner {
   width: 100%;
   height: 70vh;
@@ -259,7 +262,7 @@ footer a {
   letter-spacing: 14px; }
 
 .index-lesson {
-  background-color: #eee;
+  background-color: #eeeeee;
   width: 100%; }
   .index-lesson p {
     text-align: left; }
@@ -325,12 +328,12 @@ footer a {
       position: absolute;
       top: 90px;
       left: 70px; }
+
   .index-info .overlay {
     padding: 30px 0; }
     .index-info .overlay div {
       flex-direction: column;
       padding: 30px 8%; } }
-
 @media screen and (max-width: 520px) {
   #indexBanner {
     height: 50vh;
@@ -345,67 +348,121 @@ footer a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+
   .index-lesson article {
     flex-direction: column; }
   .index-lesson p {
     padding-top: 25px; } }
-
-/* ====== SCHEDULE ====== */
-#scheduleBanner {
+/* ====== BANNERS ====== */
+/* for About, Schedule, and Lessons pages */
+.banner {
   width: 100%;
   height: 50vh;
   margin-top: 65px;
-  background-image: url("../images/indexbg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
   min-width: 320px; }
-  #scheduleBanner #scheduleBannerOverlay {
+  .banner .banner-overlay {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7); }
-  #scheduleBanner h1 {
+  .banner h1 {
     color: #003e6b;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px; }
+    font-size: 40px;
+    text-align: center; }
 
+#aboutBanner {
+  background-image: url("../images/banner_about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#scheduleBanner {
+  background-image: url("../images/indexbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#lessonsBanner {
+  background-image: url("../images/banner_lessons.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* ====== ABOUT ====== */
+.about > div:nth-child(2n) {
+  background-color: #eeeeee; }
+.about section {
+  margin: 0 auto;
+  max-width: 1100px;
+  min-width: 320px;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between; }
+  .about section div:first-child {
+    width: 45%;
+    margin: auto; }
+  .about section div:last-child {
+    width: 50%; }
+  .about section h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #003e6b;
+    letter-spacing: 1.5px; }
+  .about section p, .about section li {
+    line-height: 1.5; }
+  .about section ul {
+    padding-left: 1em; }
+@media (max-width: 768px) {
+  .about {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .about > div:nth-child(2n) {
+      background-color: #fff; }
+    .about section {
+      display: block; }
+      .about section div:first-child {
+        width: 100%;
+        padding-top: 1em;
+        border-top: 1px solid #dddddd; }
+      .about section div:last-child {
+        width: 100%; }
+    .about > div:last-child section div:last-child {
+      border-bottom: 1px solid #dddddd; }
+    .about .center-on-narrow {
+      text-align: center; } }
+@media (max-width: 520px) {
+  .about section {
+    padding: 0 1em; } }
+
+/* ====== SCHEDULE ====== */
 .schedule .scheduleDesc {
   padding: 20px; }
-
 .schedule li {
   list-style-type: none; }
-
 .schedule table {
   width: 80%;
   margin: 40px auto; }
-
 .schedule th, .schedule td {
   width: 40%;
   height: 50px;
   padding: 15px; }
-
 .schedule th {
   background-color: #003e6b;
   color: #fff; }
-
 .schedule .sessionBox {
   font-weight: 700;
   color: #003e6b;
   border-bottom: solid 2px #003e6b; }
-
 .schedule .thick {
   border-bottom: solid 2px #003e6b; }
-
 .schedule .thin {
-  border-bottom: solid 0.2px #ddd; }
-
+  border-bottom: solid 0.2px #dddddd; }
 .schedule h3 {
   font-size: 30px; }
-
 .schedule .scheduleInfo {
   width: 100%;
   text-align: left;
@@ -417,16 +474,15 @@ footer a {
 @media screen and (max-width: 768px) {
   .scheduleInfo {
     flex-direction: column; } }
-
 @media screen and (max-width: 520px) {
   table {
     width: 80%;
     margin: 40px auto;
     font-size: 13px; }
+
   th, td {
     width: 40%;
     height: 50px; } }
-
 .contact {
   margin-top: 140px;
   min-width: 320px; }
@@ -447,13 +503,13 @@ footer a {
   .contact .left-contact p {
     line-height: 1.5; }
   .contact .right-contact {
-    background: #eee;
+    background: #eeeeee;
     padding: 20px; }
     .contact .right-contact input {
       margin: 8px 0 18px 0;
       border: none;
-      background: #eee;
-      border-bottom: solid 2px #aaa;
+      background: #eeeeee;
+      border-bottom: solid 2px #aaaaaa;
       padding: 10px;
       font-size: 14px; }
     .contact .right-contact .input {
@@ -477,7 +533,7 @@ footer a {
       padding: 15px;
       font-size: 14px;
       border: none;
-      background: #ddd; }
+      background: #dddddd; }
 
 #reminder, #reminder2 {
   display: none;
@@ -516,15 +572,16 @@ footer a {
 @media screen and (max-width: 900px) {
   .contact-info {
     flex-direction: column; }
+
   .input {
     width: 70%;
     height: 35px; } }
-
 @media screen and (max-width: 520px) {
   .contact h1 {
     font-size: 36px;
     color: #003e6b;
     letter-spacing: 10px; }
+
   #popup-box {
     position: absolute;
     top: 50%;
@@ -544,3 +601,5 @@ footer a {
       cursor: pointer; }
     #popup-box img {
       width: 60px; } }
+
+/*# sourceMappingURL=styles.css.map */

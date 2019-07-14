@@ -4,7 +4,7 @@
 	<main> 
 		<div id="lessonsBanner" class="banner">
 			<div class="banner-overlay">
-				<h1>Lesson Notes</h1>
+				<h1>Lessons</h1>
 			</div>
 		</div>
 
