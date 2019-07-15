@@ -3,7 +3,7 @@
 
 header {
 	background-color: $bg-color;
-	height: 70px;
+	height: $header-height;
 	position: fixed;
 	top:0;
 	left:0;
@@ -71,7 +71,7 @@ header nav a:focus{
 		left: 0;
 		width: 100%;
 		display: none;
-		top:70px;
+		top: $header-height;
 		padding-bottom: 20px;
 	}
 
