@@ -4,7 +4,7 @@
     max-width: $large;
     min-width: $min-width;
     padding: 2em;
-    overflow-wrap: break-word;
+    overflow-wrap: break-word; //so long links in the lesson text will break across multiple lines, at smaller widths
 
     img{
         display: block;
@@ -56,7 +56,6 @@
     }
 
     .lesson-header{
-        max-width: $mobile;
         @include margin-center;
 
         ol{
@@ -80,31 +79,40 @@
 
     .link-previous,
     .link-next,
-    .mini-nav{
+    .scroll-nav{
         position: absolute;
         margin: 0;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 
-    .mini-nav{
-        top: 1em;
+    .scroll-nav{
         right: 0;
+    }
+
+    .link-previous, .link-next{
+        font-size: 1em;
     }
 
     .link-previous{
-        top: 0;
         left: 0;
-        font-size: 2em;
     }
 
     .link-next{
-        top: 0;
         right: 0;
-        font-size: 2em;
     }
 
 
     @media (max-width:$mobile){
         padding: 1em;
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        .link-previous, .link-next{
+            font-size: 0.75em;
+        }
 
         ul, ol{
             padding-left: 1.75em;

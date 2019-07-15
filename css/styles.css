@@ -483,6 +483,87 @@ footer a {
   th, td {
     width: 40%;
     height: 50px; } }
+.lessons {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  min-width: 320px;
+  padding: 2em;
+  overflow-wrap: break-word; }
+  .lessons img {
+    display: block;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    border: solid 2px #eeeeee; }
+  .lessons li > img {
+    margin: 0.5em; }
+  .lessons a {
+    color: #003e6b; }
+    .lessons a:hover, .lessons a:focus, .lessons a:active {
+      color: #38abff; }
+  .lessons h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003e6b;
+    letter-spacing: 1.5px; }
+  .lessons h3 {
+    margin: 1rem -1rem 0;
+    padding: 1rem;
+    padding-right: 2rem;
+    background-color: #eeeeee;
+    font-size: 1.25rem; }
+  .lessons h4 {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #dddddd; }
+  .lessons h5 {
+    font-size: 1rem;
+    margin-top: 1.15rem;
+    margin-bottom: 1rem; }
+  .lessons .lesson-header {
+    margin-left: auto;
+    margin-right: auto; }
+    .lessons .lesson-header ol {
+      font-weight: bold; }
+      .lessons .lesson-header ol li {
+        padding: 0.5em 0; }
+  .lessons .content,
+  .lessons .lesson-header {
+    padding-top: 91px;
+    margin-top: -91px; }
+    .lessons .content > div,
+    .lessons .lesson-header > div {
+      position: relative; }
+  .lessons .link-previous,
+  .lessons .link-next,
+  .lessons .scroll-nav {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .lessons .scroll-nav {
+    right: 0; }
+  .lessons .link-previous, .lessons .link-next {
+    font-size: 1em; }
+  .lessons .link-previous {
+    left: 0; }
+  .lessons .link-next {
+    right: 0; }
+  @media (max-width: 520px) {
+    .lessons {
+      padding: 1em; }
+      .lessons h2 {
+        font-size: 1.5rem; }
+      .lessons .link-previous, .lessons .link-next {
+        font-size: 0.75em; }
+      .lessons ul, .lessons ol {
+        padding-left: 1.75em; }
+      .lessons .content,
+      .lessons .lesson-header {
+        padding-top: 70px;
+        margin-top: -70px; } }
+
 .contact {
   margin-top: 140px;
   min-width: 320px; }

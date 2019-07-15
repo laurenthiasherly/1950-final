@@ -13,8 +13,8 @@
 			<section class="lesson-header" id="lesson-top">
 				<div>
 					<h2>Lesson 01</h2>
-					<p><a href="lessons.php" class="link-previous" title="previous section"><</a></p>
-					<p><a href="lessons02.php" class="link-next" title="next section">></a></p>
+					<p><a href="lessons.php" class="link-previous" title="previous lesson (index)">&#x2190;previous</a></p>
+					<p><a href="lessons02.php" class="link-next" title="next lesson">next&#x2192;</a></p>
 				</div>
 			</section>
 
@@ -32,7 +32,7 @@
 			<section class="content" id="intro">
 				<div>
 					<h3>Introductions</h3>
-					<p class="mini-nav">
+					<p class="scroll-nav">
 						<a href="#orientation" title="next">&#x2193;</a>
 						<a href="#lesson-top" title="previous">&#x2191;</a>
 					</p>
@@ -51,7 +51,7 @@
 			<section class="content" id="orientation">
 				<div>
 					<h3>Orientation</h3>
-					<p class="mini-nav">
+					<p class="scroll-nav">
 						<a href="#tools" title="next">&#x2193;</a>
 						<a href="#intro" title="previous">&#x2191;</a>
 					</p>
@@ -103,7 +103,7 @@
 			<section class="content" id="tools">
 				<div>
 					<h3>Web development tools</h3>
-					<p class="mini-nav">
+					<p class="scroll-nav">
 						<a href="#standards" title="next">&#x2193;</a>
 						<a href="#orientation" title="previous">&#x2191;</a>
 					</p>
@@ -205,7 +205,7 @@
 			<section class="content" id="standards">
 				<div>
 					<h3>Standards based development</h3>
-					<p class="mini-nav">
+					<p class="scroll-nav">
 						<a href="#to-do" title="next">&#x2193;</a>
 						<a href="#tools" title="previous">&#x2191;</a>
 					</p>
@@ -385,7 +385,7 @@
 			<section class="content" id="to-do">
 				<div>
 					<h3>To Do</h3>
-					<p class="mini-nav">
+					<p class="scroll-nav">
 						<a href="#standards" title="previous">&#x2191;</a>
 						<a href="#lesson-top" title="previous">&#x2912;</a>
 					</p>
