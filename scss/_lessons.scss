@@ -1,0 +1,120 @@
+.lessons{
+
+    @include margin-center;
+    max-width: $large;
+    min-width: $min-width;
+    padding: 2em;
+    overflow-wrap: break-word;
+
+    img{
+        display: block;
+        margin: 0.5em auto;
+        padding: 0.5em;
+        border: solid 2px $semi-light;
+    }
+
+    li > img{
+        margin: 0.5em;
+    }
+
+    a{
+        color: $dark;
+
+        &:hover,
+        &:focus,
+        &:active{
+            color: $semi-dark;
+        }
+    }
+
+    h2{
+        @include text-center;
+        font-size: 2rem;
+        color: $dark;
+        letter-spacing: 1.5px;
+    }
+
+    h3{
+        margin: 1rem -1rem 0;
+        padding: 1rem;
+        padding-right: 2rem;
+        background-color: $semi-light;
+        font-size: 1.25rem;
+    }
+
+    h4{
+        font-size: 1.15rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid $semi-light2;
+    }
+
+    h5{
+        font-size: 1rem;
+        margin-top: 1.15rem;
+        margin-bottom: 1rem;
+    }
+
+    .lesson-header{
+        max-width: $mobile;
+        @include margin-center;
+
+        ol{
+            font-weight: bold;
+
+            li{
+                padding: 0.5em 0;
+            }
+        }
+    }
+
+    .content,
+    .lesson-header{
+        padding-top: $large-logo-height;
+        margin-top: -$large-logo-height;
+        
+        > div{
+            position: relative;
+        }
+    }
+
+    .link-previous,
+    .link-next,
+    .mini-nav{
+        position: absolute;
+        margin: 0;
+    }
+
+    .mini-nav{
+        top: 1em;
+        right: 0;
+    }
+
+    .link-previous{
+        top: 0;
+        left: 0;
+        font-size: 2em;
+    }
+
+    .link-next{
+        top: 0;
+        right: 0;
+        font-size: 2em;
+    }
+
+
+    @media (max-width:$mobile){
+        padding: 1em;
+
+        ul, ol{
+            padding-left: 1.75em;
+        }
+
+        .content,
+        .lesson-header{
+            padding-top: $header-height;
+            margin-top: -$header-height;
+        }
+    }
+
+}
