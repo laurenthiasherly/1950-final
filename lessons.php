@@ -10,7 +10,10 @@
 
 		<article class="lessons">
 			<section class="lesson-header">
-				<h2>Lesson Index</h2>
+				<div>
+					<h2>Index</h2>
+					<p><a href="lessons01.php" class="link-next" title="next lesson">begin&#x2192;</a></p>
+				</div>
 				<ol>
 					<li><a href="lessons01.php">Introductions, tools, standards</a></li>
 					<li><a href="lessons02.php">Responsive design, fonts</a></li>

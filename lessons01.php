@@ -13,7 +13,7 @@
 			<section class="lesson-header" id="lesson-top">
 				<div>
 					<h2>Lesson 01</h2>
-					<p><a href="lessons.php" class="link-previous" title="previous lesson (index)">&#x2190;previous</a></p>
+					<p><a href="lessons.php" class="link-previous" title="previous lesson (index)">&#x2190;index</a></p>
 					<p><a href="lessons02.php" class="link-next" title="next lesson">next&#x2192;</a></p>
 				</div>
 			</section>
@@ -33,8 +33,8 @@
 				<div>
 					<h3>Introductions</h3>
 					<p class="scroll-nav">
-						<a href="#orientation" title="next">&#x2193;</a>
-						<a href="#lesson-top" title="previous">&#x2191;</a>
+						<a href="#orientation" title="next section">&#x2193;</a>
+						<a href="#lesson-top" title="previous section">&#x2191;</a>
 					</p>
 				</div>
 				<p><strong>Instructors:</strong> Jeff Parker (<a href="mailto:jeffrey_parker@bcit.ca">jeffrey_parker@bcit.ca</a>), Michael Whyte (<a href="michael_whyte@bcit.ca">michael_whyte@bcit.ca</a>)</p>
@@ -52,8 +52,8 @@
 				<div>
 					<h3>Orientation</h3>
 					<p class="scroll-nav">
-						<a href="#tools" title="next">&#x2193;</a>
-						<a href="#intro" title="previous">&#x2191;</a>
+						<a href="#tools" title="next section">&#x2193;</a>
+						<a href="#intro" title="previous section">&#x2191;</a>
 					</p>
 				</div>
 				<h4>Sharefile</h4>
@@ -104,8 +104,8 @@
 				<div>
 					<h3>Web development tools</h3>
 					<p class="scroll-nav">
-						<a href="#standards" title="next">&#x2193;</a>
-						<a href="#orientation" title="previous">&#x2191;</a>
+						<a href="#standards" title="next section">&#x2193;</a>
+						<a href="#orientation" title="previous section">&#x2191;</a>
 					</p>
 				</div>
 				<h4>Visual Studio Code</h4>
@@ -206,8 +206,8 @@
 				<div>
 					<h3>Standards based development</h3>
 					<p class="scroll-nav">
-						<a href="#to-do" title="next">&#x2193;</a>
-						<a href="#tools" title="previous">&#x2191;</a>
+						<a href="#to-do" title="next section">&#x2193;</a>
+						<a href="#tools" title="previous section">&#x2191;</a>
 					</p>
 				</div>
 				<h4>Standards: W3C</h4>
@@ -386,8 +386,7 @@
 				<div>
 					<h3>To Do</h3>
 					<p class="scroll-nav">
-						<a href="#standards" title="previous">&#x2191;</a>
-						<a href="#lesson-top" title="previous">&#x2912;</a>
+						<a href="#standards" title="previous section">&#x2191;</a>
 					</p>
 				</div>
 				<ul>
