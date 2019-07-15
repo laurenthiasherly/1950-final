@@ -4,7 +4,7 @@
 	<main> 
 		<div id="aboutBanner" class="banner">
 			<div class="banner-overlay">
-				<h1>Course Outline</h1>
+				<h1>About</h1>
 			</div>
 		</div>
 
