@@ -9,12 +9,8 @@
 		</div>
 		<div class="schedule maxwidth center text-center">
 			<div class="scheduleDesc">
-				<p> <br><br> The goal of the course is: 
-					<ul>
-						<li>- To gain a deeper understanding of HTML, CSS and advanced topics in web development</li>
-						<li>- To focus on best practices in web page and web site design.</li>
-					</ul>
-					This is a week by week breakdown of what students will learn on each of the 12 days of the course.</p>
+				<p> <br><br>
+					This is a week by week breakdown of what students will learn on each of the 12 weeks of the course.</p>
 			</div>
 			<table class="center">
 				<tr>
