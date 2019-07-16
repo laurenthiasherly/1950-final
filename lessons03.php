@@ -12,9 +12,9 @@
 
 		<section class="lesson-header" id="lesson-top">
 			<div>
-				<h2>Lesson 02</h2>
-				<p><a href="lessons03.php" class="link-previous" title="previous lesson">&#x2190;previous</a></p>
-				<p><a href="lessons.php" class="link-next" title="continue to index">index&#x2192;</a></p>
+				<h2>Lesson 03</h2>
+				<p><a href="lessons02.php" class="link-previous" title="previous lesson">&#x2190;previous</a></p>
+				<p><a href="lessons.php" class="link-next" title="return to index">index&#x2192;</a></p>
 			</div>
 		</section>
 
