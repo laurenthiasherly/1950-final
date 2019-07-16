@@ -9,10 +9,11 @@
 		</div>
 
 		<article class="lessons">
-			<section class="lesson-header">
+
+			<section class="lesson-header" id="lesson-index">
 				<div>
 					<h2>Index</h2>
-					<p><a href="lessons01.php" class="link-next" title="next lesson">begin&#x2192;</a></p>
+					<p><a href="lessons01.php" class="link-next" title="continue to first lesson">begin&#x2192;</a></p>
 				</div>
 				<ol>
 					<li><a href="lessons01.php">Introductions, tools, standards</a></li>
@@ -29,6 +30,7 @@
 					<li><a href="#">Final exam</a></li>
 				</ol>
 			</section>
+
 		</article>
 	</main>
 
