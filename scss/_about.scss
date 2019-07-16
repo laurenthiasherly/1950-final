@@ -4,9 +4,12 @@
 .about{
     
     > div{
+        padding: 1em 0;
+
         &:nth-child(2n){
             background-color: $semi-light;
         }
+
     }
 
     section{
