@@ -276,6 +276,10 @@
 			<p>You can use SVG graphics with the <strong>img</strong> tag, just as with raster graphics. You can also use .svg as a CSS <strong>background-image</strong>.</p>
 			<p><strong>&lt;img src=&quot;images/logo.svg&quot; alt=&quot;COMP 1950 logo&quot /&gt;</strong></p>
 			<p>The <strong>png</strong> on the left is 26KB. The <strong>.svg</strong> on the right is only 4KB.</p>
+			<div class="compare-images">
+				<img src="images/lesson02_comp1950_logo.png" alt="A sample logo in PNG format.">
+				<img src="images/lesson02_comp1950_logo.svg" alt="The same logo in SVG format.">
+			</div>
 			<p>Alternatively, you can use SVG code 'inline' with the <strong>svg</strong> tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your your <strong>.html</strong> code. Just copy the source code from your <strong>.svg</strong> file and paste it directly into your <strong>.html</strong>!</p>
 			<p>
 				<strong>
@@ -321,7 +325,12 @@
 				<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src=&quot;media/house-a-square.ogg&quot; type=&quot;audio/ogg&quot; /&gt;
 				<br>&lt;/audio&gt;
 			</strong></p>
-			<a href="http://bcitcomp.ca/1950/media/house-a-square.mp3">Download the audio</a>
+			<p><a href="http://bcitcomp.ca/1950/media/house-a-square.mp3">Download the audio</a><p>
+			<audio controls="controls">
+				<source src="media/house-a-square.mpg" type="audio/mpeg" />
+				<source src="media/house-a-square.mp3" type="audio/mp3" />
+				<source src="media/house-a-square.ogg" type="audio/ogg" />
+			</audio>
 
 			<h4>Video</h4>
 			<p>The <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/video">video</a> element provides a way to offer many video formats to the client, allowing the browser to choose the one most suitable.</p>
@@ -335,7 +344,7 @@
 				<li><strong>loop="loop"</strong> loop playback</li>
 				<li><strong>muted="muted"</strong> begin with audio silenced</li>
 				<li><strong>preload="none"</strong> dont load the video until the user clicks 'play', <strong>preload="metadata"</strong> preloads the clip duration statistic only, <strong>preload="auto"</strong> loads the clip to the client before they click 'play'</li>
-				<li><strong>autoplay="autoplay"</strong>g video as soon as page is loaded *NOT very user friendly*</li>
+				<li><strong>autoplay="autoplay"</strong> begin playing video as soon as page is loaded *NOT very user friendly*</li>
 				<li>you may also wish to include a direct link for your users to download the file</li>
 			</ul>
 			<p><strong>
@@ -347,7 +356,14 @@
 				<br>&lt;source src=&quot;media/bear-in-water.ogg&quot; type=&quot;video/ogg&quot; /&gt;
 				<br>&lt;/video&gt;
 			</strong></p>
-			<p><a href="http://bcitcomp.ca/1950/media/bear-in-water.mp4">Download the video</a></P>
+			<p><a href="http://bcitcomp.ca/1950/media/bear-in-water.mp4">Download the video</a></p>
+			<video 	preload="none"
+					controls="controls" 
+					poster="media/poster-bear-in-water.jpg">
+					<source src="media/bear-in-water.webm" type="video/webm" /> 
+					<source src="media/bear-in-water.mp4" type="video/mp4" />
+					<source src="media/bear-in-water.ogg" type="video/ogg" />
+			</video>
 
 			<h4>HTML5 Today</h4>
 			<p>User agent browsers will have varying support for the HTML5 specification.</p>
