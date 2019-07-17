@@ -96,39 +96,46 @@
 
 			<h4>XHTML Rules:</h4>
 			<ul>
-				<li>All elements must be properly nested</li>
+				<li>All elements must be properly nested
 					<ul>
 						<li>This is not valid: <strong>&lt;p&gt;&lt;b&gt;Bolded Text&lt;/p&gt;&lt;/b&gt;</strong></li>
 						<li>This can be a problem with things like Lists &lt;ol&gt; and &lt;ul&gt;.</li>
 						<li>Especially when closing the List Item &lt;li&gt; tag that contains the &lt;ul&gt; or &lt;ol&gt; tag.</li>
 					</ul>
-				<li>All tags must close</li>
+				</li>
+				<li>All tags must close
 					<ul>
 						<li>Example: <strong>&lt;p&gt;Some text here&lt;/p&gt;</strong></li>
 						<li>Empty Elements are closed as well: <strong>&lt;br /&gt;</strong> or <strong>&lt;img src=&quot;#&quot; /&gt;</strong></li>
 						<li>An extra space is required before the slash to work with all browsers.</li>
 					</ul>
-				<li>All tag names must be in lower case</li>
+				</li>
+				<li>All tag names must be in lower case
 					<ul>
 						<li><strong>&lt;img src=&quot;some_image.gif&quot;&gt;</strong> is not valid</li>
 					</ul>
-				<li>Attribute names are always in lower case</li>
+				</li>
+				<li>Attribute names are always in lower case
 					<ul>
 						<li><strong>&lt;p ALIGN=&quot;center&quot;&gt;</strong> should be <strong>&lt;p align=&quot;center&quot;&gt;</strong></li>
 					</ul>
-				<li>All attributes must be quoted</li>
+				</li>
+				<li>All attributes must be quoted
 					<ul>
 						<li><strong>&lt;body bgcolor=black&gt;</strong> will not work, you need: <strong>&lt;body bgcolor=&quot;black&quot;&gt;</strong></li>
 					</ul>
-				<li>Attributes cannot be minimized</li>
+				</li>
+				<li>Attributes cannot be minimized
 					<ul>
 						<li><strong>&lt;input type=&quot;checkbox&quot; checked&gt;</strong> cannot be used. The valid code is: <strong>&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;</strong></li>
 					</ul>
-				<li>Name Attribute is no longer used (except with forms). Replace &quot;name&quot; with &quot;id&quot;.</li>
+				</li>
+				<li>Name Attribute is no longer used (except with forms). Replace &quot;name&quot; with &quot;id&quot;.
 					<ul>
 						<li><strong>&lt;img src=&quot;picture.gif&quot; name=&quot;myimage&quot; /&gt;</strong> will not validate. Use <strong>id=&quot;myimage&quot;</strong> instead.</li>
 					</ul>
-				<li>Mandatory Elements: Every XHTML document <strong>must have</strong> these elements:</li>
+				</li>
+				<li>Mandatory Elements: Every XHTML document <strong>must have</strong> these elements:
 					<ul>
 						<li><strong>&lt;html&gt;</strong></li>
 						<li><strong>&lt;head&gt;</strong></li>
@@ -136,19 +143,23 @@
 						<li><strong>&lt;body&gt;</strong></li>
 						<li>The <strong>&lt;!DOCTYPE&gt;</strong> declaration <em>must</em> be there, but it is <em>part</em> of the document itself rather than an element of the document.</li>
 					</ul>
-				<li>Documents must be well-formed</li>
+				</li>
+				<li>Documents must be well-formed
 					<ul>
 						<li>The document must conform to all of the above rules</li>
 					</ul>
-				<li>Optional XML declaration</li>
+				</li>
+				<li>Optional XML declaration
 					<ul>
 						<li>Not <em>required</em>, but good practice:</li>
 						<li><strong>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</strong></li>
 					</ul>
-				<li>Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header:</li>
+				</li>
+				<li>Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header:
 					<ul>
 						<li><strong>&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot; charset=&quot;UTF-8&quot;&gt;</strong></li>
 					</ul>
+				</li>
 			</ul>
 
 			<h4>XHTML 1.0 template - HTML5</h4>
@@ -199,7 +210,7 @@
 				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">&lt;nav&gt;</a> represents an area for navigation</li>
 				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">&lt;main&gt;</a> used for containing content that is focused on the central topic of the page. this content is usually unique to the page, and not shared by other pages (main will usually NOT contain navigations, footers, sidebars, etc)</li>
 				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">&lt;figure&gt;</a> will likely contain an <strong>img</strong> or graphic. self-contained content (could usually be removed from the page and stand on its own). allows for captioning of embedded content like an image graphic or video. if you want to associate a caption, add a <strong>figcaption</strong> child</li>
-				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">&lt;figcaption&gt;</a> used as first or last child of figure</strong> to define the caption or legend for a figure</li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">&lt;figcaption&gt;</a> used as first or last child of <strong>figure</strong> to define the caption or legend for a figure</li>
 			</ul>
 			<p>These represent some big changes in HTML, allowing for more flexibility in coding and specifying content. Many of these will replace and reduce the need for many <strong>div</strong> tags. eg: instead of the typical <strong>&lt;div id=&quot;header&quot;</strong>, use <strong>&lt;header&gt;</strong>.</p>
 			<p>Having trouble deciding which tag to use for what content? Try this <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">HTML5 flowchart</a>.</p>
@@ -208,7 +219,7 @@
 			<p>HTML5 also brings a few notable semantic alterations to older tags:</p>
 			<ul>
 				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">&lt;a&gt;</a> though still an inline tag, it is now ok to nest multiple block level tags (headings, paragraphs etc) inside an anchor tag</li>
-				<li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/small">&lt;small&gt;</a> no longer a 'physical' tag for smaller sized print, it now has semantic value: meaning 'small print', i.e. 'legalese'. the <strong>big</strong> element has</a> been deprecated</li>
+				<li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/small">&lt;small&gt;</a> no longer a 'physical' tag for smaller sized print, it now has semantic value: meaning 'small print', i.e. 'legalese'. the <strong>big</strong> element has been deprecated</li>
 				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">&lt;b&gt;</a> no longer means 'render bold'. now it means the text is 'stylisticly offset from the normal text', without conveying any extra importance. to convey extra importance, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">&lt;strong&gt;</a></li>
 				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">&lt;i&gt;</a> now means the text is 'in an alternate voice or mood', without conveying any extra emphasis. to convey extra emphasis, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">&lt;em&gt;</a></li>
 				<li>Deprecated tags: <strong>&lt;big&gt;</strong>, <strong>&lt;font&gt;</strong>, <strong>&lt;strike&gt;</strong>, and a few more. Developers should use CSS instead of these deprecated tags.</li>
@@ -251,16 +262,17 @@
 				<li><strong>autofocus="autofocus":</strong> sets the input to have cursor focus</li>
 				<li><strong>required="required":</strong> ensures field is filled in before submission</li>
 				<li>There are also several new <strong>&lt;input&gt;</strong> type attribute variants:</li>
-				<li>type="email": checkes for the pattern of emails</li>
-				<ul>
-					<li><strong>type="url"</strong>: web addesses</li>
-					<li><strong>type="date"</strong>: calendar popup</li>
-					<li><strong>type="tel"</strong>: telephone numbers</li>
-					<li><strong>type="search"</strong>: formats text input as search input</li>
-					<li><strong>type="color"</strong>: color picker popup</li>
-					<li><strong>="range"</strong>: sliding scales</li>
-					<li><strong>type="pattern"</strong>: regular expression pattern matching</li>
-				</ul>
+				<li>type="email": checkes for the pattern of emails
+					<ul>
+						<li><strong>type="url"</strong>: web addesses</li>
+						<li><strong>type="date"</strong>: calendar popup</li>
+						<li><strong>type="tel"</strong>: telephone numbers</li>
+						<li><strong>type="search"</strong>: formats text input as search input</li>
+						<li><strong>type="color"</strong>: color picker popup</li>
+						<li><strong>="range"</strong>: sliding scales</li>
+						<li><strong>type="pattern"</strong>: regular expression pattern matching</li>
+					</ul>
+				</li>
 			</ul>
 		</section>
 
@@ -274,7 +286,7 @@
 			</div>
 			<p><a href="http://www.w3.org/Graphics/SVG/">Scaleable Vector Graphics (SVG)</a> can be embedded into HTML5 documents. SVG are 100% scalable without the pixelated effect that scaled raster images can suffer from. SVG file data is stored as text, so they are much smaller in file size than a raster equivalent.</p>
 			<p>You can use SVG graphics with the <strong>img</strong> tag, just as with raster graphics. You can also use .svg as a CSS <strong>background-image</strong>.</p>
-			<p><strong>&lt;img src=&quot;images/logo.svg&quot; alt=&quot;COMP 1950 logo&quot /&gt;</strong></p>
+			<p><strong>&lt;img src=&quot;images/logo.svg&quot; alt=&quot;COMP 1950 logo&quot; /&gt;</strong></p>
 			<p>The <strong>png</strong> on the left is 26KB. The <strong>.svg</strong> on the right is only 4KB.</p>
 			<div class="compare-images">
 				<img src="images/lesson02_comp1950_logo.png" alt="A sample logo in PNG format.">
@@ -370,15 +382,19 @@
 			<ul>
 				<li><a href="https://caniuse.com/">caniuse.com</a> is an excellent source for compatibility testing</li>
 				<li>Try the <a href="http://html5test.com/">HTML5Test</a> to test a specific browser.</li>
-				<li>To ensure early versions of Internet Explorer will render HTML5 tags correctly, you can add the HTML5 shiv:</li>
-				<ul>
-					<li><strong>&lt;script&gt;document.createElement(&quot;article&quot;);&lt;/script&gt;</strong></li>
-					<li>This creates an element called <strong>&lt;article&gt;</strong> which the browser (IE, in this case) can understand and style appropriately</li>
-				</ul>
-				<li>Creating an entry for every element can get a bit heavy, so you can use the <a href="https://github.com/aFarkas/html5shiv">HTML5shiv</a> script written by <a href="http://remysharp.com/">Remy Sharp</a>. Insert a coded-comment that will apply the shiv ONLY with IE browsers earlier than version 9:</li>
-					<li><strong>&lt;!--[if lt IE 9]&gt;</strong></li>
-					<li><strong>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</strong></li>
-					<li><strong>&lt;![endif]--&gt;</strong></li>
+				<li>To ensure early versions of Internet Explorer will render HTML5 tags correctly, you can add the HTML5 shiv:
+					<ul>
+						<li><strong>&lt;script&gt;document.createElement(&quot;article&quot;);&lt;/script&gt;</strong></li>
+						<li>This creates an element called <strong>&lt;article&gt;</strong> which the browser (IE, in this case) can understand and style appropriately</li>
+					</ul>
+				</li>
+				<li>Creating an entry for every element can get a bit heavy, so you can use the <a href="https://github.com/aFarkas/html5shiv">HTML5shiv</a> script written by <a href="http://remysharp.com/">Remy Sharp</a>. Insert a coded-comment that will apply the shiv ONLY with IE browsers earlier than version 9:
+					<ul>
+						<li><strong>&lt;!--[if lt IE 9]&gt;</strong></li>
+						<li><strong>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</strong></li>
+						<li><strong>&lt;![endif]--&gt;</strong></li>
+					</ul>
+				</li>
 				<li>Since HTML5 understands both HTML4 and XHTML tags, converting an older HTML file into HTML5 is simply a matter of updating the DOCTYPE and meta tag for charset.</li>
 			</ul>
 
