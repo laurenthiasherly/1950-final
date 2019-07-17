@@ -42,7 +42,8 @@
 			<p>The W3C recommends <a href="https://www.w3.org/International/questions/qa-choosing-encodings">the UTF-8 charset</a> for web development. It includes an impressive array of languages and special characters, and is well supported in common devices.</p>
 
 			<h4>Assign Character Set</h4>
-			<p>If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the <strong>meta</strong> tag to the <strong>head</strong> section of every HTML page: <strong>&lt;meta charset="utf-8&quot; /&gt;</strong></p>
+			<p>If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the <strong>meta</strong> tag to the <strong>head</strong> section of every HTML page:</p>
+			<p><strong>&lt;meta charset="utf-8&quot; /&gt;</strong></p>
 			<ul>
 				<li>Write all your text-based code (<strong>.html</strong>, <strong>.css</strong>, <strong>.js</strong>, <strong>.php</strong>, etc) in UTF-8. At development time, ensure your text editor is saving files in this format. This setting is usually found in the application's Preferences menu option.</li>
 				<li>Unless your audience includes very old browsers, you can <a href="https://tools.oratory.com/altcodes.html">code special characters</a> directly into the HTML (you dont need to use HTML entities for most special characters).</li>
@@ -146,12 +147,11 @@
 					</ul>
 				<li>Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header:</li>
 					<ul>
-						<li><strong><meta http-equiv="Content-Type" content="text/html" charset="UTF-8"></strong></li>
+						<li><strong>&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot; charset=&quot;UTF-8&quot;&gt;</strong></li>
 					</ul>
 			</ul>
 
-			<h4>XHTML 1.0 template</h4>
-			<h4>HTML5</h4>
+			<h4>XHTML 1.0 template - HTML5</h4>
 			<p>As of October 28, 2014, <a href="http://www.w3.org/TR/html5/">HTML5 is the official W3C recommendation</a>.</p>
 			<p>HTML5 is more evolutionary then revolutionary. The bulk of previous HTML elements and attributes are maintained, with a few deprecations, and several additions.</p>
 			<p>Significant features include:</p>
@@ -163,9 +163,8 @@
 				<li>Backwards compatible - older versions of HTML can effectively be updated by simply changing the doctype to HTML5</li>
 				<li>Guiding principles: Enhance semantic coding, Support existing content, Pave the cowpaths</li>
 			</ul>
-			<h4>HTML 5 template</h4>
 
-			<h4>Paving the Cowpaths</h4>
+			<h4>HTML 5 template - Paving the Cowpaths</h4>
 			<p>Common developer practices have been simplified</p>
 			<ul>
 				<li>Finally a DOCTYPE we can all remember:
@@ -251,23 +250,23 @@
 				<li><strong>placeholder="value":</strong> prepopulates field with data</li>
 				<li><strong>autofocus="autofocus":</strong> sets the input to have cursor focus</li>
 				<li><strong>required="required":</strong> ensures field is filled in before submission</li>
-				<li>There are also several new <input> type attribute variants:</li>
+				<li>There are also several new <strong>&lt;input&gt;</strong> type attribute variants:</li>
 				<li>type="email": checkes for the pattern of emails</li>
 				<ul>
-					<li>type="url": web addesses</li>
-					<li>type="date": calendar popup</li>
-					<li>type="tel": telephone numbers</li>
-					<li>type="search": formats text input as search input</li>
-					<li>type="color": color picker popup</li>
-					<li>type="range": sliding scales</li>
-					<li>type="pattern": regular expression pattern matching</li>
+					<li><strong>type="url"</strong>: web addesses</li>
+					<li><strong>type="date"</strong>: calendar popup</li>
+					<li><strong>type="tel"</strong>: telephone numbers</li>
+					<li><strong>type="search"</strong>: formats text input as search input</li>
+					<li><strong>type="color"</strong>: color picker popup</li>
+					<li><strong>="range"</strong>: sliding scales</li>
+					<li><strong>type="pattern"</strong>: regular expression pattern matching</li>
 				</ul>
 			</ul>
 		</section>
 
 		<section class="content" id="svg">
 			<div>
-				<h3>Scaleable Vector Graphics/h3>
+				<h3>Scaleable Vector Graphics</h3>
 				<p class="scroll-nav">
 					<a href="#multimedia" title="next section">&#x2193;</a>
 					<a href="#forms" title="previous section">&#x2191;</a>
@@ -277,18 +276,20 @@
 			<p>You can use SVG graphics with the <strong>img</strong> tag, just as with raster graphics. You can also use .svg as a CSS <strong>background-image</strong>.</p>
 			<p><strong>&lt;img src=&quot;images/logo.svg&quot; alt=&quot;COMP 1950 logo&quot /&gt;</strong></p>
 			<p>The <strong>png</strong> on the left is 26KB. The <strong>.svg</strong> on the right is only 4KB.</p>
-			<p>Alternatively, you can use SVG code 'inline' with the <strong>svg</strong> tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your your <strong>.html</strong> code. Just copy the source code from your <strong>.svg</strong> file and paste it directly into your <strong>.html!</strong></p>
+			<p>Alternatively, you can use SVG code 'inline' with the <strong>svg</strong> tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your your <strong>.html</strong> code. Just copy the source code from your <strong>.svg</strong> file and paste it directly into your <strong>.html</strong>!</p>
 			<p>
+				<strong>
 				&lt;svg viewBox=&quot;0 0 55 28&quot;&gt;
 				<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- svg code goes here... sometimes there is a LOT of code here! --&gt;
 				<br>&lt;/svg&gt;
+				</strong>
 			</p>
 
 			<h4>SVG Tools</h4>
 			<p>Use an SVG application to help you create and manipulate your SVG code.</p>
 			<ul>
-				<li>Adobe Illustrator</li>
-				<li>Inkscape (Open source, Windows/Mac/Linux)</li>
+				<li><a href="http://www.adobe.com/ca/products/illustrator.html">Adobe Illustrator</a></li>
+				<li><a href="https://inkscape.org/en/">Inkscape (Open source, Windows/Mac/Linux)</a></li>
 			</ul>
 		</section>
 
@@ -323,8 +324,8 @@
 			<a href="http://bcitcomp.ca/1950/media/house-a-square.mp3">Download the audio</a>
 
 			<h4>Video</h4>
-			<p>The video element provides a way to offer many video formats to the client, allowing the browser to choose the one most suitable.</p>
-			<p>The most common video formats for the web are: video/mp4, video/ogg and video/webm.</p>
+			<p>The <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/video">video</a> element provides a way to offer many video formats to the client, allowing the browser to choose the one most suitable.</p>
+			<p>The most common video formats for the web are: video/mp4, video/ogg and video/webm.</p>
 			<h5>Each video tag may contain:</h5>
 			<ul>
 				<li><strong>source</strong> tags as children of the <strong>video</strong> tag, one for each video format available. Each <strong>source</strong> must have a <strong>src</strong> (path to video file) and <strong>type</strong> (video file MIME type)</li>
@@ -355,7 +356,7 @@
 				<li>Try the <a href="http://html5test.com/">HTML5Test</a> to test a specific browser.</li>
 				<li>To ensure early versions of Internet Explorer will render HTML5 tags correctly, you can add the HTML5 shiv:</li>
 				<ul>
-					<li><strong>&lt;script&gt;document.createElement(&quot;article&quot;);&lt;/script&gt;<strong></li>
+					<li><strong>&lt;script&gt;document.createElement(&quot;article&quot;);&lt;/script&gt;</strong></li>
 					<li>This creates an element called <strong>&lt;article&gt;</strong> which the browser (IE, in this case) can understand and style appropriately</li>
 				</ul>
 				<li>Creating an entry for every element can get a bit heavy, so you can use the <a href="https://github.com/aFarkas/html5shiv">HTML5shiv</a> script written by <a href="http://remysharp.com/">Remy Sharp</a>. Insert a coded-comment that will apply the shiv ONLY with IE browsers earlier than version 9:</li>
@@ -374,8 +375,10 @@
 					<a href="#multimedia" title="previous section">&#x2191;</a>
 				</p>
 			</div>
-			<li>Download, review, and complete the homework assignment from <a href="https://learn.bcit.ca/">D2L</a></li>
-			<li>Review the <a href="">HTML5 semantic tags</a>, know how and when to use them to maxmize the semantic strucure of your HTML</li>
+			<ul>
+				<li>Download, review, and complete the homework assignment from <a href="https://learn.bcit.ca/">D2L</a></li>
+				<li>Review the <a href="">HTML5 semantic tags</a>, know how and when to use them to maxmize the semantic strucure of your HTML</li>
+			</ul>
 		</section>
 
 	</article>
