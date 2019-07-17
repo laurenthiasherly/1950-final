@@ -57,6 +57,14 @@ $(document).ready(function(){
 		}
 
 		else{
+			if(pattern.test($("#studentno").val()) === true){
+				console.log("student no ok");
+				$("#reminder2").css("display", "none");
+			}
+			else{
+				$("#reminder2").css("display", "block");
+			}
+
 			$("#reminder").css("display", "block");
 			isValid = false;
 		}
