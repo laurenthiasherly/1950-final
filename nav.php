@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lamng="en">
 <head>
 	<meta charset="utf-8">
 	<title>BCIT - COMP 1950 Final Project</title>
