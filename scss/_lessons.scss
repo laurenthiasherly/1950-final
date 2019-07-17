@@ -119,6 +119,10 @@
         right: -0.5em;
     }
 
+    .compare-images{
+        display: flex;
+        justify-content: center;
+    }
 
     @media (max-width:$mobile){
         padding: 1em;
