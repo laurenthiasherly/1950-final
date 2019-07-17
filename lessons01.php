@@ -272,7 +272,7 @@
 						<ul>
 							<li>Capital letters</li>
 							<li>Spaces</li>
-							<li>Special characters: <strong>! @ # $ % ^ & * ( ) + { } [ ] : ; " < > ? |</strong> etc...</li>
+							<li>Special characters: <strong>! @ # $ % ^ & * ( ) + { } [ ] : ; " &lt; &gt; ? |</strong> etc...</li>
 						</ul>
 					</li>
 					<li>Acceptable non-alphanumeric characters: <strong>. _ - ~</strong></li>
