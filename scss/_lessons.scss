@@ -55,6 +55,14 @@
         margin-bottom: 1rem;
     }
 
+    #lesson-index{
+        ol{
+            background-color: $semi-light;
+            margin: 1em -1em;
+            padding: 1em 1em 1em 3.5em;
+        }
+    }
+
     .lesson-header{
         @include margin-center;
 
@@ -104,13 +112,17 @@
     }
 
     .link-previous{
-        left: 0;
+        left: -0.5em;
     }
 
     .link-next{
-        right: 0;
+        right: -0.5em;
     }
 
+    .compare-images{
+        display: flex;
+        justify-content: center;
+    }
 
     @media (max-width:$mobile){
         padding: 1em;
@@ -125,6 +137,10 @@
 
         ul, ol{
             padding-left: 1.75em;
+        }
+
+        #lesson-index ol{
+            padding-left: 2.5em;
         }
 
         .content,

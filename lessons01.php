@@ -1,7 +1,7 @@
 
 <?php include("nav.php") ?>
 
-	<main> 
+	<main>
 		<div id="lessonsBanner" class="banner">
 			<div class="banner-overlay">
 				<h1>Lessons</h1>
@@ -13,7 +13,7 @@
 			<section class="lesson-header" id="lesson-top">
 				<div>
 					<h2>Lesson 01</h2>
-					<p><a href="lessons.php" class="link-previous" title="previous lesson (index)">&#x2190;index</a></p>
+					<p><a href="lessons.php" class="link-previous" title="return to index">&#x2190;index</a></p>
 					<p><a href="lessons02.php" class="link-next" title="next lesson">next&#x2192;</a></p>
 				</div>
 			</section>

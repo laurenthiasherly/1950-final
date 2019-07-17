@@ -4,9 +4,12 @@
 .about{
     
     > div{
+        padding: 1em 0;
+
         &:nth-child(2n){
             background-color: $semi-light;
         }
+
     }
 
     section{
@@ -45,10 +48,12 @@
     }
 
     @media (max-width: $medium) {
-        margin-top: 2em;
+        margin-top: 1em;
         margin-bottom: 2em;
 
         > div{
+            padding-bottom: 0;
+
             &:nth-child(2n){
                 background-color: $light;
             }
