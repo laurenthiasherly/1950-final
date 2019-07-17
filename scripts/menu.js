@@ -45,7 +45,7 @@ $(document).ready(function(){
 				$('form :input').val('');
 				$('form :checked').removeAttr('checked');
 				$('#submit').val('Submit');
-				$("#defaultcheck").attr("checked", "checked");
+				$("#whichstudent").attr("checked", "checked");
 			}
 
 			else{
